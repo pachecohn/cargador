@@ -1,0 +1,53 @@
+.regot-loader {
+font-size: 20px;
+position: relative;
+width: 4em;
+margin: 125px auto;
+}
+ 
+.regot {
+width: 1em;
+height: 1em;
+border-radius: 0.2em;
+background: #999;
+position: absolute;
+animation-duration:1.2s;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+}
+ 
+.regot1 { left: 0; }
+.regot2 { left: 1.25em; }
+.regot3 { left: 2.5em; }
+.regot4 { left: 3.75em; }
+ 
+@keyframes twist {
+0% {
+transform: rotate(0) scale(1);
+background: #999;
+}
+50% {
+transform: rotate(180deg) scale(.75);
+background: #ccc;
+}
+100% {
+transform: rotate(180deg) scale(1);
+background: #FFA300;
+}
+}
+ 
+.regot1 {
+animation-name: twist;
+}
+.regot2 {
+animation-name: twist;
+animation-delay:.1s;
+}
+.regot3 {
+animation-name: twist;
+animation-delay:.2s;
+}
+.regot4 {
+animation-name: twist;
+animation-delay:.3s;
+}
